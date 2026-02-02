@@ -1,5 +1,3 @@
-# Hbimmersive-
-Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité augmentée dédiée à la création, manipulation et au partage d’hologrammes 3D.
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +5,6 @@ Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité aug
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>HB IMMERSIVE – Hologrammes 3D en Réalité Augmentée</title>
-
     <meta name="description" content="HB IMMERSIVE est une application de réalité augmentée permettant de créer, manipuler et partager des hologrammes 3D interactifs depuis un smartphone.">
 
     <!-- Open Graph -->
@@ -78,7 +75,6 @@ Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité aug
             margin-left: 20px;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
         }
 
         nav a:hover {
@@ -130,11 +126,6 @@ Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité aug
             color: white;
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-        }
-
         section {
             padding: 80px 0;
         }
@@ -157,56 +148,12 @@ Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité aug
             padding: 30px;
             text-align: center;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: transform 0.3s;
-        }
-
-        .feature:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature img {
-            max-width: 180px;
-            margin-bottom: 20px;
-        }
-
-        .screenshots img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        .screenshots table {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .video-container {
-            max-width: 850px;
-            margin: auto;
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: none;
         }
 
         .contact {
             background: var(--dark);
             color: white;
             text-align: center;
-        }
-
-        .socials a {
-            color: white;
-            font-size: 1.6rem;
-            margin: 0 15px;
         }
 
         footer {
@@ -232,8 +179,8 @@ Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité aug
             <img src="assets/logo.png" alt="HB IMMERSIVE Logo">
             <div>
                 <a href="#features">Fonctionnalités</a>
-                <a href="#screenshots">Captures</a>
-                <a href="#video">Démo</a>
+                <a href="#screens">Captures</a>
+                <a href="#demo">Démo</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
@@ -243,69 +190,60 @@ Site portfolio officiel de HB IMMERSIVE, une application mobile de réalité aug
 <section class="hero">
     <div class="container">
         <h1>HB IMMERSIVE</h1>
-        <p>Transformez votre smartphone en projecteur holographique et créez des expériences 3D immersives en réalité augmentée.</p>
+        <p>
+            Transformez votre smartphone en projecteur holographique
+            et créez des expériences 3D immersives en réalité augmentée.
+        </p>
         <div class="cta">
-            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.hb.immersive.pro">Google Play</a>
-            <a class="btn btn-secondary" href="#video">Voir la démo</a>
+            <a href="#" class="btn btn-primary">Google Play</a>
+            <a href="#demo" class="btn btn-secondary">Voir la démo</a>
         </div>
     </div>
 </section>
 
 <section id="features">
-    <h2>Fonctionnalités clés</h2>
-    <div class="container features-grid">
-        <div class="feature">
-            <img src="screenshots/fr/ar_mode.jpg" alt="AR Mode">
-            <h3>Réalité augmentée</h3>
-            <p>Interaction directe avec des hologrammes 3D en temps réel.</p>
-        </div>
-        <div class="feature">
-            <img src="screenshots/fr/share.jpg" alt="Share">
-            <h3>Partage social</h3>
-            <p>Capture et partage instantané de vos créations.</p>
-        </div>
-        <div class="feature">
-            <img src="screenshots/fr/premium.jpg" alt="Premium">
-            <h3>Mode Premium</h3>
-            <p>Accès à des modèles exclusifs et expérience sans publicité.</p>
-        </div>
-    </div>
-</section>
-
-<section id="screenshots" class="screenshots">
-    <h2>Captures d’écran</h2>
     <div class="container">
-        <table>
-            <tr>
-                <td><img src="screenshots/fr/home.jpg" alt="Accueil"></td>
-                <td><img src="screenshots/fr/ar_mode.jpg" alt="AR"></td>
-                <td><img src="screenshots/fr/premium.jpg" alt="Premium"></td>
-                <td><img src="screenshots/fr/share.jpg" alt="Share"></td>
-            </tr>
-        </table>
+        <h2>Fonctionnalités clés</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-vr-cardboard fa-3x"></i>
+                <h3>Réalité augmentée</h3>
+                <p>Interaction en temps réel avec des hologrammes 3D.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-share-alt fa-3x"></i>
+                <h3>Partage social</h3>
+                <p>Capturez et partagez instantanément vos créations.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-crown fa-3x"></i>
+                <h3>Mode Premium</h3>
+                <p>Accès exclusif à des modèles avancés sans publicité.</p>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="video">
-    <h2>Démonstration</h2>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<section id="demo">
+    <div class="container">
+        <h2>Démonstration</h2>
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    style="position:absolute;width:100%;height:100%;border:0;"
+                    allowfullscreen></iframe>
+        </div>
     </div>
 </section>
 
 <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Partenariats, support ou presse</p>
-    <div class="socials">
-        <a href="mailto:heritier.baguma@hbimmersive.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://twitter.com/HBImmersive"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com/hbimmersive"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/company/hbimmersive"><i class="fab fa-linkedin"></i></a>
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Partenariats, support ou presse</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 HB IMMERSIVE — Tous droits réservés</p>
+    © 2026 HB IMMERSIVE — Tous droits réservés
 </footer>
 
 </body>
